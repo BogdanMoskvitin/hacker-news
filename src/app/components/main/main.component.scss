@@ -1,0 +1,48 @@
+p, span {
+    user-select: none;
+}
+.flex {
+    display: flex;
+}
+.index {
+    font-size: 16px;
+    color: #828282;
+}
+.title {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+.url {
+    font-size: 14px;
+    color: #828282;
+}
+.points {
+    font-size: 12px;
+    color: #828282;
+}
+.comments {
+    font-size: 12px;
+    color: #828282;
+    text-decoration: none;
+    
+}
+.comments:hover {
+    text-decoration-line: underline;
+}
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.btn {
+    width: 100px;
+    height: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border: 1px solid;
+}
+.btn:disabled {
+    color: #828282;
+}

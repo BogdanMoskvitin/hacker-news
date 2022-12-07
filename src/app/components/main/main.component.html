@@ -1,0 +1,22 @@
+<div *ngFor="let item of data?.hits; let i = index">
+    <div class="flex">
+        <span class="index">{{i + 1}}.</span>
+        <div>
+            <div>
+                <a class="title" [href]="item.url">{{item.title}}</a>
+                <span class="url"> ({{item.url | shortDomain}})</span>
+            </div>
+            
+            <div>
+                <span class="points">{{item.points}} points by {{item.author}} | </span>
+                <a class="comments" [routerLink]="['comments']">{{item.num_comments}} comments</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="btns">
+    <button class="btn" [disabled]="data?.page == 0" (click)="changePage('back', data.page)">Back</button>
+    <button class="btn" (click)="changePage('next', data.page)">Next</button>
+</div>
